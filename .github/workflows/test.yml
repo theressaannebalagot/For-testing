@@ -7,6 +7,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Get project data
+        with:
+          cmd: 'jq .version package.json -r'
+          multiline: true
         env:
           GITHUB_TOKEN: ${{ secrets.GHPROJECT_TOKEN }}
           ORGANIZATION: theressaannebalagot
