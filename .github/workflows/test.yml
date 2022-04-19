@@ -6,7 +6,7 @@ jobs:
   automate-project:
     runs-on: windows-latest
     steps:
-      - run: gh pr create
+      - name: Get project data
         env:
           GITHUB_TOKEN: ${{ secrets.GHPROJECT_TOKEN }}
           ORGANIZATION: theressaannebalagot
