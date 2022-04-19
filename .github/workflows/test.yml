@@ -6,7 +6,6 @@ jobs:
   automate-project:
     runs-on: windows-latest
     steps:
-      - name: Get project data
       - run: gh pr create
         env:
           GITHUB_TOKEN: ${{ secrets.GHPROJECT_TOKEN }}
