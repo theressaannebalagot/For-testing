@@ -4,7 +4,7 @@ on:
     types: [opened]
 jobs:
   track_pr:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Get project data
         env:
